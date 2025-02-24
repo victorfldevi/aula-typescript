@@ -1,3 +1,2 @@
-"use strict";
-let mensagem = "Olá, TypeScript!";
+var mensagem = "Olá, TypeScript!";
 console.log(mensagem);
