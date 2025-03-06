@@ -1,4 +1,20 @@
-// Exercício 1 - Tipagem e Arrays
-let valores: number[] = [10, 20, 30];
-let somaValores: number = valores.reduce((acc, val) => acc + val, 0);
-console.log("Soma dos valores:", somaValores);
+interface Carro {
+    marca: string;
+    modelo: string;
+    ano: number;
+    motor?: string;
+}
+
+const meuCarro: Carro = {
+    marca: "Volkswagen",
+    modelo: "Polo",
+    ano: 2025,
+    motor: "v8"
+}
+
+console.log(
+    `Marca: ${meuCarro.marca}\n` +
+    `Modelo: ${meuCarro.modelo}\n` +
+    `Ano: ${meuCarro.ano}\n` +
+    `Motor: ${meuCarro.motor}\n`
+)

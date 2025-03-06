@@ -1,5 +1,9 @@
-// Exercício 2 - Função Tipada
-function mensagemPersonalizada(nome: string): string {
-    return `Olá, ${nome}! Bem-vindo ao TypeScript.`;
+interface Multiplicacao {
+    (a: number, b: number): number;
 }
-console.log(mensagemPersonalizada("Ana"));
+
+const multiplicar: Multiplicacao = (x, y) => x * y;
+
+console.log(multiplicar(2, 2));
+console.log(multiplicar(10, 5));
+console.log(multiplicar(10, 10));
